@@ -1,5 +1,7 @@
+from django.conf import settings
+from django.shortcuts import render
 from datetime import datetime, timedelta
-from rest_framework import generics
+from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.exceptions import NotFound, PermissionDenied
 from rest_framework.permissions import IsAuthenticated
@@ -53,41 +55,3 @@ class LoginView(generics.GenericAPIView):
             'token': token,
             'message': f'Welcome back {username}'
         }, status=status.HTTP_200_OK)
-
-
-# class ProfileView(generics.GenericAPIView):
-
-#     permission_classes = (IsAuthenticated, )
-
-#     def get(self, request):
-#         serialized_user = UserProfileSerializer(request.user)
-#         return Response(serialized_user.data, status=status.HTTP_200_OK)
-
-
-# class ProfileDetailView(APIView):
-
-#     permission_classes = (IsAuthenticated, )
-
-#     def get_user(self, pk):
-#         """ retrives user from db by its pk(id) or responds 404 not found """
-
-#         try:
-#             return User.objects.get(pk=pk)
-#         except User.DoesNotExist:
-#             raise NotFound()
-
-#     def get(self, _request, pk):
-#         user = self.get_user(pk=pk)
-#         serialized_user = UserProfileSerializer(user)
-#         return Response(serialized_user.data, status=status.HTTP_200_OK)
-
-#     def put(self, request, pk):
-#         # user_to_edit = UserProfileEditSerializer(request.user)
-#         user_to_edit = self.get_user(pk=pk)
-#         edited_profile = UserProfileEditSerializer(
-#             user_to_edit, data=request.data)
-#         if edited_profile.is_valid():
-#             edited_profile.save()
-#             return Response({'message': 'Accepted Edit'},
-#                             status=status.HTTP_202_ACCEPTED)
-#         return Response(edited_profile.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

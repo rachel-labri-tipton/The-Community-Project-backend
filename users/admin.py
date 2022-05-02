@@ -1,0 +1,10 @@
+from django.conf import UserSettingsHolder
+from django.contrib import admin
+from django.contrib.auth import get_user_model
+
+from users.models import User
+
+User = get_user_model()
+
+# Register your models here.
+admin.site.register(User)

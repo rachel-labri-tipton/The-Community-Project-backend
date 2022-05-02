@@ -29,10 +29,3 @@ class LoginSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'password')
-
-
-class UserEditProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('username', 'password', 'first_name',
-                  'last_name', 'email', 'profile_image')
