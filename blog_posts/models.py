@@ -24,16 +24,16 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=200, unique=True)
     excerpt = models.TextField(null=True)
     author = models.ForeignKey(
-        Author, on_delete=models.CASCADE, related_name='blog_posts')
+        Author, on_delete=models.CASCADE, related_name='author_name', null=True, blank=True)
     content = models.TextField()
-    slug = models.SlugField(max_length=250, unique_for_date='published')
+    slug = models.SlugField(max_length=250, unique_for_date='published', null=True)
     status = models.CharField(
         max_length=10, choices=options, default='published')
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now=True)
+    created_on = models.DateTimeField(auto_now_add=True, null=True)
+    updated_on = models.DateTimeField(auto_now=True, null=True)
 
-    objects = models.Manager()
-    postobjects = BlogPostObjects()
+    # objects = models.Manager()
+    # postobjects = BlogPostObjects()
 
     # class Meta:
     #     ordering = ('-published',)

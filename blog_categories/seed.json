@@ -1,0 +1,16 @@
+[
+  {
+    "category": 1,
+    "title": "Blog Post 1",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid commodi a ex adipisci assumenda, sit voluptatibus, reprehenderit cumque sapiente exercitationem recusandae asperiores quo vel?",
+    "author": "Staff Writer",
+    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quia rem maxime veniam id, excepturi quas necessitatibus porro est quae amet earum eos ipsum illum nulla, dolores soluta molestias ad ea quos culpa modi a libero similique. Incidunt laborum officiis qui distinctio, quibusdam illum asperiores vero consequuntur error voluptas, cumque, ipsa ad at quidem! Optio quod expedita, rerum odio, natus perspiciatis cumque ad atque veniam numquam, ex quo ipsum in alias consectetur ratione? Aut consequuntur nulla quasi saepe eum laborum totam est culpa alias ducimus quia, velit quis maiores veritatis nihil hic explicabo excepturi nostrum facere porro itaque? Adipisci, accusantium."
+  },
+  {
+    "category": 1,
+    "title": "Blog Post 2",
+    "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aliquid commodi a ex adipisci assumenda, sit voluptatibus, reprehenderit cumque sapiente exercitationem recusandae asperiores quo vel?",
+    "author": "User2",
+    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quia rem maxime veniam id, excepturi quas necessitatibus porro est quae amet earum eos ipsum illum nulla, dolores soluta molestias ad ea quos culpa modi a libero similique. Incidunt laborum officiis qui distinctio, quibusdam illum asperiores vero consequuntur error voluptas, cumque, ipsa ad at quidem! Optio quod expedita, rerum odio, natus perspiciatis cumque ad atque veniam numquam, ex quo ipsum in alias consectetur ratione? Aut consequuntur nulla quasi saepe eum laborum totam est culpa alias ducimus quia, velit quis maiores veritatis nihil hic explicabo excepturi nostrum facere porro itaque? Adipisci, accusantium."
+  }
+]

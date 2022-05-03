@@ -12,7 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     def create(self, data):
         user = User.objects.create_user(
-            data['username'], password=data['password'], first_name=data['first_name'], last_name=data[
+            username=data['username'], password=data['password'], first_name=data['first_name'], last_name=data[
                 'last_name'], email=data['email'], profile_image=data['profile_image']
         )
 

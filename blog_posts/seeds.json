@@ -1,0 +1,22 @@
+[
+  {
+    "model": "blog_posts.blogpost",
+    "pk": 1,
+    "fields": {
+      "title": "Blog Post 1",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quia rem maxime veniam id, excepturi quas necessitatibus porro est quae amet earum eos ipsum illum nulla, dolores soluta molestias ad ea quos culpa modi a libero similique. Incidunt laborum officiis qui distinctio, quibusdam illum asperiores vero consequuntur error voluptas, cumque, ipsa ad at quidem! Optio quod expedita",
+      "status": "published"
+    }
+  },
+  {
+    "model": "blog_posts.blogpost",
+    "pk": 2,
+    "fields": {
+      "title": "Blog Post 2",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quia rem maxime veniam id, excepturi quas necessitatibus porro est quae amet earum eos ipsum illum nulla, dolores soluta molestias ad ea quos culpa modi a libero similique. Incidunt laborum officiis qui distinctio.",
+      "status": "published"
+    }
+  }
+]
